@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>admin request</title>
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <script defer src="js/fontawesome-all.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar bg-light">
+            <div>
+                <a class="navbar-brand menu" href="adminRequest.html">Request</a>
+                <a class="navbar-brand menu" href="adminBlock.html">Block</a>
+                <a class="navbar-brand menu" href="adminAcademic.html">Academic</a>
+            </div>
+            <div>
+                <a class="navbar-brand menu" href="signin.html">Sign Out</a>
+            </div>
+        </nav>
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <br><br>
+                <h4>Student Course Request</h4>
+                <br>
+
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Shaira Shuchi</td>
+                            <td>example@email.com</td>
+                            <td>Female</td>
+                            <td style="color:DodgerBlue" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-check-circle"></i> Accept
+                            </td>
+                            <td style="color:darkred" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-times-circle"></i> Cancel
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Nayan Ahmed</td>
+                            <td>example@email.com</td>
+                            <td>Male</td>
+                            <td style="color:DodgerBlue" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-check-circle"></i> Accept
+                            </td>
+                            <td style="color:darkred" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-times-circle"></i> Cancel
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Abdur Rahman</td>
+                            <td>example@email.com</td>
+                            <td>Male</td>
+                            <td style="color:DodgerBlue" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-check-circle"></i> Accept
+                            </td>
+                            <td style="color:darkred" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-times-circle"></i> Cancel
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="col-md-12">
+
+                <br><br>
+                <h4>Student Drop Request</h4>
+                <br>
+
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Shaira Shuchi</td>
+                            <td>example@email.com</td>
+                            <td>Female</td>
+                            <td style="color:DodgerBlue" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-check-circle"></i> Accept
+                            </td>
+                            <td style="color:darkred" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-times-circle"></i> Cancel
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Nayan Ahmed</td>
+                            <td>example@email.com</td>
+                            <td>Male</td>
+                            <td style="color:DodgerBlue" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-check-circle"></i> Accept
+                            </td>
+                            <td style="color:darkred" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-times-circle"></i> Cancel
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Abdur Rahman</td>
+                            <td>example@email.com</td>
+                            <td>Male</td>
+                            <td style="color:DodgerBlue" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-check-circle"></i> Accept
+                            </td>
+                            <td style="color:darkred" data-toggle="modal" data-target="#exampleModal">
+                                <i class="far fa-times-circle"></i> Cancel
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+        <footer class="mt-5 mb-3 text-muted text-center">&copy; 2018 - Laravel Sample Project</footer>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

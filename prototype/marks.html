@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>marks</title>
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar bg-light">
+            <div>
+                <a class="navbar-brand menu" href="profile.html">Profile</a>
+                <a class="navbar-brand menu" href="course.html">Course</a>
+                <a class="navbar-brand menu" href="report.html">Report</a>
+            </div>
+            <div>
+                <a class="navbar-brand menu" href="signin.html">Sign Out</a>
+            </div>
+        </nav>
+
+
+        <div class="row name">
+            <div class="col-6">
+                <h3>About Course</h3>
+            </div>
+            <div class="col-6">
+                <a class="nav-link active text-center" href="courseTeacher.html">Back to home page</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <table class="table table-sm">
+                    <tbody>
+                        <tr>
+                            <td>Course Code</td>
+                            <td>CS1001</td>
+                        </tr>
+                        <tr>
+                            <td>Course Name</td>
+                            <td>Data Structure</td>
+                        </tr>
+                        <tr>
+                            <td>Student</td>
+                            <td>30 [40]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Give Marks</h3>
+            </div>
+            <div class="col-md-6">
+                    <a class="nav-link active text-center" href="details.html">Back to details</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="col-md-12">
+            <form method="POST" action="#">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Grade</th>
+                            <th scope="col">Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Shaira Shuchi</td>
+                            <td id="1"></td>
+                            <td><input name="1" type="number" min="0" max="100" onchange="grade(this.value, this.name)"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Nayan Ahmed</td>
+                            <td id="2"></td>
+                            <td><input name="2" type="number" min="0" max="100" onchange="grade(this.value, this.name)"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Abdur Rahman</td>
+                            <td id="3"></td>
+                            <td><input name="3" type="number" min="0" max="100" onchange="grade(this.value, this.name)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                    <button class="btn btn-md btn-primary" type="submit">Save Marks</button>
+                </div>
+            </form>
+        </div>
+        <footer class="mt-5 mb-3 text-muted text-center">&copy; 2018 - Laravel Sample Project</footer>
+
+    </div>
+
+
+    <script>
+        function grade(val, name) {
+            if(val.length > 0 ) {
+                var x = document.getElementById(name);
+                var m = +val;
+
+                var g = '';
+
+                if(m > 100 ) g='Invalid Marks';
+                else if(m >= 90) g='A+';
+                else if(m >= 85) g = 'A';
+                else if(m >= 80) g = 'B+';
+                else if(m >= 75) g = 'B';
+                else if(m >= 70) g = 'C+';
+                else if(m >= 65) g = 'C';
+                else if(m >= 60) g = 'D+';
+                else if(m >= 50) g = 'D';
+                else if(m >= 0 ) g = 'F';
+                else g = 'Invalid Marks'
+
+                x.innerHTML = g;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

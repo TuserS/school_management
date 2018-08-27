@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>create course</title>
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/signinup.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar bg-light">
+            <div>
+                <a class="navbar-brand menu" href="adminRequest.html">Request</a>
+                <a class="navbar-brand menu" href="adminBlock.html">Block</a>
+                <a class="navbar-brand menu" href="adminAcademic.html">Academic</a>
+            </div>
+            <div>
+                <a class="navbar-brand menu" href="signin.html">Sign Out</a>
+            </div>
+        </nav>
+
+
+        <form class="form-signin">
+          <h1 class="h3 mb-3 font-weight-normal">Create course</h1>
+
+          <label for="inputCourseCode" class="sr-only">Course Code</label>
+          <input type="text" id="inputCourseCode" class="form-control" placeholder="Course Code" required autofocus>
+
+          <label for="inputCourseName" class="sr-only">Course Name</label>
+          <input type="text" id="inputCourseName" class="form-control" placeholder="Course Name" required>
+
+          <label for="inputStudentLimit" class="sr-only">Student Limit</label>
+          <input type="number"  min="15" max="60" id="inputStudentLimit" class="form-control" placeholder="Student Limit" required>
+
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Create course</button>
+          <a class="nav-link active" href="adminAcademic.html">Back to Academic page</a>
+        </form>
+
+
+        <footer class="mt-5 mb-3 text-muted text-center">&copy; 2018 - Laravel Sample Project</footer>
+
+    </div>
+</body>
+
+</html>

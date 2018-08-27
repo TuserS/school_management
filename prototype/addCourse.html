@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>add course</title>
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <script defer src="js/fontawesome-all.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar bg-light">
+            <div>
+                <a class="navbar-brand menu" href="profile.html">Profile</a>
+                <a class="navbar-brand menu" href="course.html">Course</a>
+                <a class="navbar-brand menu" href="report.html">Report</a>
+            </div>
+            <div>
+                <a class="navbar-brand menu" href="signin.html">Sign Out</a>
+            </div>
+        </nav>
+
+        
+        <form>
+            <h2 class="text-center name">Offered Course</h2>
+            <br><br>
+            <a class="nav-link active text-right" href="courseStudent.html">Back to course page</a>
+            <br>
+            <div class="row">
+
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Course Code</th>
+                            <th scope="col">Course Name</th>
+                            <th scope="col">Teacher</th>
+                            <th scope="col">Enrolled Student</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="x"></td>
+                            <td>1001</td>
+                            <td>Data Structure</td>
+                            <td>Bijon Paul</td>
+                            <td>30 [40]</td>
+                        </tr>
+                        <tr>
+                            <td><input  type="checkbox"></td>
+                            <td>1023</td>
+                            <td>Algorithm</td>
+                            <td>Mijanur Rahman</td>
+                            <td>34 [40]</td>
+                        </tr>
+                        <tr>
+                            <td><input  type="checkbox"></td>
+                            <td>3201</td>
+                            <td>Software Engineering</td>
+                            <td>Abdur Rauf</td>
+                            <td>20 [40]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+            <button class="btn btn-md btn-primary" type="submit">Add course</button>
+            <br>
+
+            <footer class="mt-5 mb-3 text-muted text-center">&copy; 2018 - Nodejs Sample Project</footer>
+        </form>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
